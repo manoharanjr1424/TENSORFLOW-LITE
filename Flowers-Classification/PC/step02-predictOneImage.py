@@ -19,9 +19,9 @@ flower_categories = ['daisy', 'dandelion' , 'rose', 'sunflower' , 'tulip']
 
 
 #load the saved model :
-model = tf.keras.models.load_model('/home/mjayakumar/VVDN_BU_PROJECTS/tensorflowlite/Flowers Recognition/flowersOption2.h5')
+model = tf.keras.models.load_model('flowersOption2.h5')
 
-img_dir = "/home/mjayakumar/VVDN_BU_PROJECTS/tensorflowlite/Flowers Recognition/flower.jpg"
+img_dir = "flower.jpg"
 data_path = os.path.join(img_dir,'*')
 files = glob.glob(data_path)
 
@@ -69,4 +69,4 @@ cv2.putText(imgFinalResult, text , (0,100), font, 2, (255,0,0), 3)
 cv2.imshow('img', imgFinalResult )
 cv2.waitKey(0)
 
-cv2.imwrite('/home/mjayakumar/VVDN_BU_PROJECTS/tensorflowlite/Flowers Recognition/result.jpg',imgFinalResult)
+cv2.imwrite('result.jpg',imgFinalResult)
