@@ -4,10 +4,10 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.utils import load_img, img_to_array
 
 # Load model
-model = load_model("/home/mjayakumar/VVDN_BU_PROJECTS/tensorflowlite/Flowers Recognition/flowersOption2.h5")
+model = load_model("")
 
 # Load and preprocess image
-img_path = "/home/mjayakumar/VVDN_BU_PROJECTS/tensorflowlite/Flowers Recognition/sunflower.jpg"
+img_path = ""
 img = load_img(img_path, target_size=(64, 64))  # Match with model's input shape
 img_array = img_to_array(img)
 img_array = img_array / 255.0                   # Normalize
